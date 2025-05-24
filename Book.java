@@ -3,6 +3,18 @@ public class Book {
     private String author;
     private int yearPublished;
 
+    public Book() {
+        this.title = "Unknown Title";
+        this.author = "Unknown Author";
+        this.yearPublished = 0;
+    }
+
+    public Book(String title, String author, int yearPublished) {
+        this.title = title;
+        this.author = author;
+        this.yearPublished = yearPublished;
+    }
+
     public void setTitle(String title) {
         this.title = title;
     }
